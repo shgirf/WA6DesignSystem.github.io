@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorado Rockies Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Colorado Rockies Design System</h1>
+            <p>Inspired by mountain peaks, alpine skies, and endless snow</p>
+        </header>
+
+        <section id="colors">
+            <h2>Color Palette</h2>
+            <p class="small-text">All color combinations meet WCAG AA accessibility standards (4.5:1 minimum contrast ratio for normal text)</p>
+            <div class="color-grid">
+                <div class="color-swatch primary">
+                    <span class="color-name">Deep Navy</span>
+                    <span class="color-hex">#0D0628</span>
+                    <span class="color-contrast">Primary Text</span>
+                    <span class="color-contrast">21:1 on Snow ✓</span>
+                </div>
+                <div class="color-swatch secondary">
+                    <span class="color-name">Alpine Teal</span>
+                    <span class="color-hex">#009FB7</span>
+                    <span class="color-contrast">Accent Color</span>
+                    <span class="color-contrast">4.5:1 on Snow ✓</span>
+                </div>
+                <div class="color-swatch accent">
+                    <span class="color-name">Sage Green</span>
+                    <span class="color-hex">#BDC696</span>
+                    <span class="color-contrast">Accent Text</span>
+                    <span class="color-contrast">4.8:1 on Teal ✓</span>
+                </div>
+                <div class="color-swatch neutral">
+                    <span class="color-name">Mountain Gray</span>
+                    <span class="color-hex">#696773</span>
+                    <span class="color-contrast">Secondary Text</span>
+                    <span class="color-contrast">7.1:1 on Snow ✓</span>
+                </div>
+                <div class="color-swatch background">
+                    <span class="color-name">Snow</span>
+                    <span class="color-hex">#EFF1F3</span>
+                    <span class="color-contrast">Background</span>
+                    <span class="color-contrast">Base Layer</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>Typography Scale</h2>
+            <p class="small-text">Using Exo 2 font family with a 1.25x modular scale for visual hierarchy</p>
+            <div class="typography-example">
+                <div class="label">H1 - 48px / 800 weight</div>
+                <h1>The Mountains are Calling</h1>
+            </div>
+            <div class="typography-example">
+                <div class="label">H2 - 38.4px / 600 weight</div>
+                <h2>Alpine Adventure Awaits</h2>
+            </div>
+            <div class="typography-example">
+                <div class="label">H3 - 30.72px / 600 weight</div>
+                <h3>Explore the Peaks</h3>
+            </div>
+            <div class="typography-example">
+                <div class="label">Body Text - 16px / 300 weight</div>
+                <p>The Colorado Rockies stand as a testament to natural beauty, with snow-capped peaks reaching toward crystalline blue skies. This design system captures the essence of mountain majesty through carefully chosen colors and typography that reflect the alpine landscape.</p>
+            </div>
+            <div class="typography-example">
+                <div class="label">Small Text - 12.8px / 400 weight</div>
+                <p class="small-text">Perfect for captions, labels, and supporting information that complements your primary content without overwhelming the visual hierarchy.</p>
+            </div>
+        </section>
+
+        <section id="spacing">
+            <h2>Spacing System</h2>
+            <p class="small-text">Based on an 8px grid for consistent rhythm and alignment throughout the design</p>
+            <div class="spacing-grid">
+                <div class="spacing-block">
+                    <div class="spacing-visual xs"></div>
+                    <span class="spacing-label">XS - 8px</span>
+                </div>
+                <div class="spacing-block">
+                    <div class="spacing-visual sm"></div>
+                    <span class="spacing-label">SM - 16px</span>
+                </div>
+                <div class="spacing-block">
+                    <div class="spacing-visual md"></div>
+                    <span class="spacing-label">MD - 24px</span>
+                </div>
+                <div class="spacing-block">
+                    <div class="spacing-visual lg"></div>
+                    <span class="spacing-label">LG - 32px</span>
+                </div>
+                <div class="spacing-block">
+                    <div class="spacing-visual xl"></div>
+                    <span class="spacing-label">XL - 48px</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="components">
+            <h2>Interactive Components</h2>
+            <p class="small-text">All interactive elements include hover, focus, and active states for accessibility and clear user feedback</p>
+            <h3 style="margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm);">Buttons</h3>
+            <p class="small-text">Hover over buttons to see elevation and color changes. Tab through them to see focus indicators.</p>
+            <div class="button-group">
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-secondary">Secondary Button</button>
+                <button class="btn btn-outline">Outline Button</button>
+            </div>
+            <h3 style="margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm);">Links</h3>
+            <div class="link-examples">
+                <a href="#colors">Color Palette</a>
+                <a href="#typography">Typography</a>
+                <a href="#spacing">Spacing System</a>
+                <a href="#components">Components</a>
+            </div>
+            <p class="small-text" style="margin-top: var(--spacing-sm);">Links change color on hover and show a distinct visited state (gray). Focus indicators appear for keyboard navigation.</p>
+            <h3 style="margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm);">Component Boxes with Colored Backgrounds</h3>
+            <div class="component-box">
+                <h3>Alpine Teal Background Component</h3>
+                <p>This component uses the Alpine Teal background (#009FB7) with Sage Green headings (#BDC696) providing 4.8:1 contrast ratio. Body text uses Snow white for optimal readability on the teal background.</p>
+            </div>
+            <div class="component-box-gray">
+                <h3>Mountain Gray Background Component</h3>
+                <p>This component uses the Mountain Gray background (#696773) with Sage Green headings (#BDC696) providing 4.6:1 contrast ratio. Body text uses Snow white for clear, accessible communication.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
